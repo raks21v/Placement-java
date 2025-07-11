@@ -17,8 +17,7 @@ public class Patterns {
         // }
         // System.out.println();
         // }
-        int r = sc.nextInt();
-        //int c = sc.nextInt();
+        // int c = sc.nextInt();
         // char ch = 'a';
         // for(int i=1;i<=r;i++){
         // for(int j=1 ; j<=c;j++){
@@ -95,45 +94,130 @@ public class Patterns {
         // System.out.println();
         // }
         // for (int i = 1; i <= r; i++) {
-        //     for (int j = 1; j <= r - i + 1; j++) {
-        //         System.out.print("* ");
+        // for (int j = 1; j <= r - i + 1; j++) {
+        // System.out.print("* ");
+        // }
+        // System.out.println();
+        // }
+        // char ch = 'A';
+        // for (int i = 1; i <= r; i++) {
+        // ch='A';
+        // for (int j = 1; j <= r - i + 1; j++) {
+        // System.out.print(ch + " ");
+        // ch++;
+        // }
+        // System.out.println();
+
+        // }
+        // for (int i = 1; i <= r; i++) {
+        // for (int j = 1; j <= r - i + 1; j++) {
+        // System.out.print(j + " ");
+        // }
+        // System.out.println();
+
+        // }
+        int r = sc.nextInt();
+        // char ch = 'J';
+        // for (int i = r; i >= 1; i--) {
+        // //ch='G';
+        // for (int j = 1; j <= i - j + 1; j++) {
+        // System.out.print(ch + " ");
+        // ch--;
+        // }
+        // System.out.println();
+
+        // }
+        /*
+         * G H I J
+         * D E F
+         * B C
+         * A
+         */
+        // for(int i = r;i>=1;i--){
+        // char ch =(char) ('A'+ i-1);
+        // for(int j=1;j<=i;j++){
+        // System.out.print(ch+" ");
+        // ch--;
+
+        // }
+        // System.out.println();
+        // }
+        // G F E D C B A
+        // F E D C B A
+        // E D C B A
+        // D C B A
+        // C B A
+        // B A
+        // A
+        // for (int i = r; i >= 1; i--) {
+        // for (int j = i; j >= 1; j--) {
+        // System.out.print(j + " ");
+        // }
+        // System.out.println();
+        // }
+        // for (int i = r; i >= 1; i--) {
+        // char ch = (char) ('A' + i-1 );
+        // for (int j = 1; j <= i; j++) {
+        // System.out.print(ch + " ");
+        // ch+=1;
+
+        // }
+        // System.out.println();
+        // }
+        // for (int i = 1; i <= r; i++) {
+        //     char ch = 'A';
+        //     for (int j = i; j <= r; j++) {
+        //         System.out.print(ch + " ");
+        //         ch++;
+        //     }
+        //     System.out.println();
+        // }
+        // A B C D
+        // A B C
+        // A B
+        // A
+        // for (int i = r; i >= 1; i--) {
+        //     for (int j = 1; j <= i; j++) {
+        //         System.out.print(j + " ");
+        //     }
+        //     System.out.println();
+        // }
+        // 1 2 3 4
+        // 1 2 3
+        // 1 2
+        // 1
+        // for(int i =r;i>=1;i--){
+        //     for(int j=1;j<=i;j++){
+        //         System.out.print( "* ");
+        //     }
+        //     System.out.println();
+        // }
+        // for(int i=r;i>=1;i--){
+        //     for(int j=1;j<=i;j++){
+        //         System.out.print(r+ " ");
         //     }
         //     System.out.println();
         // }
         // char ch = 'A';
-        // for (int i = 1; i <= r; i++) {
-        //     ch='A';
-        //     for (int j = 1; j <= r - i + 1; j++) {
-        //         System.out.print(ch  + " ");
-        //         ch++;
+        // for(int i=r;i>=1;i--){
+        //     for(int j=1;j<=i;j++){
+        //         System.out.print(ch + " ");
+        //         //ch++;
         //     }
-        //     System.out.println();
-            
+        //     ch++;
+        // //     System.out.println();
         // }
-        // for (int i = 1; i <= r; i++) {
-        //     for (int j = 1; j <= r - i + 1; j++) {
-        //         System.out.print(j + " ");
-        //     }
-        //     System.out.println();
-            
-        // }
-        char ch = 'J';
-        for (int i = r; i >= 1; i++) {
-            //ch='G';
-            for (int j = 1; j <= i - j + 1; j++) {
-                System.out.print(ch  + " ");
-                ch++;
+        for(int i =1;i<=r;i++){
+            for(int k=1;k<=r-i;k++){
+                System.out.print(" ");
+            }
+            for(int j =1;j<=i;j++){
+                System.out.print("*");
             }
             System.out.println();
             
         }
-        /*
-         G H I J 
-         D E F
-         B C
-         A
-        */
-        
+
         sc.close();
     }
 

@@ -94,6 +94,7 @@ public class Loop {
         // }if(flag == 0){
         //     System.out.println("prime");
         // }
+        
         sc.close();
     }
 }
