@@ -287,7 +287,7 @@ public class Patterns {
         // }
         // int r = sc.nextInt();
         // palindrome of a number
-        int n = sc.nextInt();
+       
         // int val_n = n;
         // int rev=0,rem;
         // while(n>0){
@@ -301,7 +301,7 @@ public class Patterns {
         // System.out.println("Not a Palindrome");
         // }
         // int n_pos = Math.abs(n);
-
+           int n = sc.nextInt();
         // int even_sum = 0;
         // int odd_sum = 0;
         // int rem;
@@ -354,12 +354,22 @@ public class Patterns {
         //armstrong number 
         int sum =0,rem,pov=1;
         int m=n;
+        int count =0;
+        while(n>0){
+            n=n/10;
+            count++;
+        }
+        n = m;
         while(n>0){
             rem = n%10;
             n=n/10;
-            for(int i = 0;i<=rem;i++){
-                pov = i*i*i;
+            pov = 1; // Reset power for each digit
+            for(int j = 1;j<=count;j++){
+                    pov *= rem;
             }
+            // for(int i = 0;i<=rem;i++){
+            //     pov = (int) Math.pow(rem,count);   
+            // }
             sum +=pov;
         }
         System.out.println(sum);
@@ -368,8 +378,26 @@ public class Patterns {
         }else{
             System.out.println("not armstrong");
         }
+        //nearest divisible number
+        // int m = sc.nextInt();
+        
+        // int near =0;
+        // if(m%n == 0){
+        //     near = m;
+        // }else{
+        //     int rem = m%n;
+        //     if(rem <= n/2){
+        //         near = m - rem;
+        //     }else{
+        //         near = m + (n - rem);
+        //     }
+        // }
+        // if(m%n == 0){
+        //     near = (m -1 )/n;
+        // }
+        // System.out.println("Nearest divisible number is: " + near);
 
-        sc.close();
+        // sc.close();
     }
 
 }
