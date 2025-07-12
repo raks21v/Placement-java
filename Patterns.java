@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+import java.lang.Math;
 public class Patterns {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -116,7 +116,7 @@ public class Patterns {
         // System.out.println();
 
         // }
-       
+
         // char ch = 'J';
         // for (int i = r; i >= 1; i--) {
         // //ch='G';
@@ -165,141 +165,156 @@ public class Patterns {
         // System.out.println();
         // }
         // for (int i = 1; i <= r; i++) {
-        //     char ch = 'A';
-        //     for (int j = i; j <= r; j++) {
-        //         System.out.print(ch + " ");
-        //         ch++;
-        //     }
-        //     System.out.println();
+        // char ch = 'A';
+        // for (int j = i; j <= r; j++) {
+        // System.out.print(ch + " ");
+        // ch++;
+        // }
+        // System.out.println();
         // }
         // A B C D
         // A B C
         // A B
         // A
         // for (int i = r; i >= 1; i--) {
-        //     for (int j = 1; j <= i; j++) {
-        //         System.out.print(j + " ");
-        //     }
-        //     System.out.println();
+        // for (int j = 1; j <= i; j++) {
+        // System.out.print(j + " ");
+        // }
+        // System.out.println();
         // }
         // 1 2 3 4
         // 1 2 3
         // 1 2
         // 1
         // for(int i =r;i>=1;i--){
-        //     for(int j=1;j<=i;j++){
-        //         System.out.print( "* ");
-        //     }
-        //     System.out.println();
+        // for(int j=1;j<=i;j++){
+        // System.out.print( "* ");
+        // }
+        // System.out.println();
         // }
         // for(int i=r;i>=1;i--){
-        //     for(int j=1;j<=i;j++){
-        //         System.out.print(r+ " ");
-        //     }
-        //     System.out.println();
+        // for(int j=1;j<=i;j++){
+        // System.out.print(r+ " ");
+        // }
+        // System.out.println();
         // }
         // char ch = 'A';
         // for(int i=r;i>=1;i--){
-        //     for(int j=1;j<=i;j++){
-        //         System.out.print(ch + " ");
-        //         //ch++;
-        //     }
-        //     ch++;
-        // //     System.out.println();
+        // for(int j=1;j<=i;j++){
+        // System.out.print(ch + " ");
+        // //ch++;
+        // }
+        // ch++;
+        // // System.out.println();
         // }
         // for(int i =1;i<=r;i++){
-        //     for(int k=1;k<=r-i;k++){
-        //         System.out.print(" ");
-        //     }
-        //     for(int j =1;j<=i;j++){
-        //         System.out.print("*");
-        //     }
-        //     System.out.println();
+        // for(int k=1;k<=r-i;k++){
+        // System.out.print(" ");
+        // }
+        // for(int j =1;j<=i;j++){
+        // System.out.print("*");
+        // }
+        // System.out.println();
         // }
         // for(int i = 1; i<=r;i++){
-        //     for(int k=1;k<=r-i;k++){
-        //         System.out.print(" ");
-        //     }
-        //     for(int j=1;j<=i;j++){
-        //         System.out.print(j);
-        //     }
-        //     System.out.println();
+        // for(int k=1;k<=r-i;k++){
+        // System.out.print(" ");
+        // }
+        // for(int j=1;j<=i;j++){
+        // System.out.print(j);
+        // }
+        // System.out.println();
         // }
         // for(int i= 1;i<=r;i++){
-        //     char ch = 'a';
-        //     for(int k=1;k<=r-i;k++){
-        //         System.out.print(" ");
-        //     }
-        //     for(int j=1;j<=i;j++){
-        //         System.out.print(ch);
-        //         ch++;
-        //     }
-        //     System.out.println();
+        // char ch = 'a';
+        // for(int k=1;k<=r-i;k++){
+        // System.out.print(" ");
+        // }
+        // for(int j=1;j<=i;j++){
+        // System.out.print(ch);
+        // ch++;
+        // }
+        // System.out.println();
         // }
         // for(int i=1;i<=r;i++){
-        //      for(int k=1;k<=r-i;k++){
-        //         System.out.print(" ");
-        //     }
-        //     for(int j =1;j<=i;j++){
-        //         System.out.print("*");
-        //     }
-        //     for(int j=1;j<=i-1;j++){//m
-        //         System.out.print("*");
-        //     }
-        //     System.out.println();
+        // for(int k=1;k<=r-i;k++){
+        // System.out.print(" ");
+        // }
+        // for(int j =1;j<=i;j++){
+        // System.out.print("*");
+        // }
+        // for(int j=1;j<=i-1;j++){//m
+        // System.out.print("*");
+        // }
+        // System.out.println();
         // }
         // for(int i=1;i<=r;i++){
-        //      for(int k=1;k<=r-i;k++){
-        //         System.out.print(" ");
-        //     }
-        //     for(int j =1;j<=i;j++){
-        //         System.out.print(j);
-        //     }
-        //     for(int j=i-1;j>=1;j--){//m
-        //         System.out.print(j);
-        //     }
-        //     System.out.println();
+        // for(int k=1;k<=r-i;k++){
+        // System.out.print(" ");
+        // }
+        // for(int j =1;j<=i;j++){
+        // System.out.print(j);
+        // }
+        // for(int j=i-1;j>=1;j--){//m
+        // System.out.print(j);
+        // }
+        // System.out.println();
         // }
         // for(int i=r;i>=1;i--){
-        //      for(int k=1;k<=r-i;k++){
-        //         System.out.print(" ");
-        //     }
-        //     for(int j =1;j<=i;j++){
-        //         System.out.print(j);
-        //     }
-        //     for(int j=i-1;j>=1;j--){//m
-        //         System.out.print(j);
-        //     }
-        //     System.out.println();
+        // for(int k=1;k<=r-i;k++){
+        // System.out.print(" ");
+        // }
+        // for(int j =1;j<=i;j++){
+        // System.out.print(j);
+        // }
+        // for(int j=i-1;j>=1;j--){//m
+        // System.out.print(j);
+        // }
+        // System.out.println();
         // }
         // for(int i=r;i>=1;i--){
-        //      for(int k=1;k<=r-i;k++){
-        //         System.out.print(" ");
-        //     }
-        //     for(int j =1;j<=i;j++){
-        //         System.out.print("*");
-        //     }
-        //     for(int j=i-1;j>=1;j--){//m
-        //         System.out.print("*");
-        //     }
-        //     System.out.println();
+        // for(int k=1;k<=r-i;k++){
+        // System.out.print(" ");
         // }
-         //int r = sc.nextInt();
+        // for(int j =1;j<=i;j++){
+        // System.out.print("*");
+        // }
+        // for(int j=i-1;j>=1;j--){//m
+        // System.out.print("*");
+        // }
+        // System.out.println();
+        // }
+        // int r = sc.nextInt();
         // palindrome of a number
-        int n =sc.nextInt();
-        int val_n = n;
-        int rev=0,rem;
-        while(n>0){
-            rem = n%10;
-            n = n/10;
-            rev = rev * 10 + rem;
-        }
-        if(val_n == rev){
-            System.out.println("Palindrome");
-        }else{
-            System.out.println("Not a Palindrome");
-        }
+        int n = sc.nextInt();
+        // int val_n = n;
+        // int rev=0,rem;
+        // while(n>0){
+        // rem = n%10;
+        // n = n/10;
+        // rev = rev * 10 + rem;
+        // }
+        // if(val_n == rev){
+        // System.out.println("Palindrome");
+        // }else{
+        // System.out.println("Not a Palindrome");
+        // }
+        int n_pos = Math.abs(n);
 
+        int even_sum = 0;
+        int odd_sum = 0;
+        int rem;
+        while (n_pos > 0) {
+            rem = n_pos % 10;
+            if (rem % 2 == 0) {
+                even_sum += rem;
+            } else {
+                odd_sum += rem;
+            }
+            n_pos = n_pos / 10;
+        }
+        System.out.println(even_sum);
+        System.out.println(odd_sum);
 
         sc.close();
     }
