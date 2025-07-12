@@ -315,7 +315,6 @@ public class Patterns {
         }
         System.out.println(even_sum);
         System.out.println(odd_sum);
-
         sc.close();
     }
 
