@@ -335,22 +335,40 @@ public class Patterns {
         // strong number
         // A strong number is a number whose sum of the factorials of its digits is
         // equal to the number itself.
-        int rem, fact = 1, sum = 0;
+        // int rem, fact = 1, sum = 0;
+        // int m=n;
+        // while (n != 0) {
+        //     rem = n % 10;
+        //     n = n / 10;
+        //     fact = 1; // Reset factorial for each digit
+        //     for (int i = 1; i <= rem; i++) {
+        //         fact *= i;
+        //     }
+        //     sum += fact;
+        // }
+        // if (sum == m) {
+        //     System.out.println("Strong Number");
+        // } else {
+        //     System.out.println("Not a Strong Number");
+        // }
+        //armstrong number 
+        int sum =0,rem,pov=1;
         int m=n;
-        while (n != 0) {
-            rem = n % 10;
-            n = n / 10;
-            fact = 1; // Reset factorial for each digit
-            for (int i = 1; i <= rem; i++) {
-                fact *= i;
+        while(n>0){
+            rem = n%10;
+            n=n/10;
+            for(int i = 0;i<=rem;i++){
+                pov = i*i*i;
             }
-            sum += fact;
+            sum +=pov;
         }
-        if (sum == m) {
-            System.out.println("Strong Number");
-        } else {
-            System.out.println("Not a Strong Number");
+        System.out.println(sum);
+        if(sum==m){
+            System.out.println("armstrong number");
+        }else{
+            System.out.println("not armstrong");
         }
+
         sc.close();
     }
 
