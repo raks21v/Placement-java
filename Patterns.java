@@ -116,7 +116,7 @@ public class Patterns {
         // System.out.println();
 
         // }
-        int r = sc.nextInt();
+       
         // char ch = 'J';
         // for (int i = r; i >= 1; i--) {
         // //ch='G';
@@ -284,7 +284,23 @@ public class Patterns {
         //     }
         //     System.out.println();
         // }
-        
+         //int r = sc.nextInt();
+        // palindrome of a number
+        int n =sc.nextInt();
+        int val_n = n;
+        int rev=0,rem;
+        while(n>0){
+            rem = n%10;
+            n = n/10;
+            rev = rev * 10 + rem;
+        }
+        if(val_n == rev){
+            System.out.println("Palindrome");
+        }else{
+            System.out.println("Not a Palindrome");
+        }
+
+
         sc.close();
     }
 
