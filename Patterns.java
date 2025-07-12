@@ -207,17 +207,84 @@ public class Patterns {
         //     ch++;
         // //     System.out.println();
         // }
-        for(int i =1;i<=r;i++){
-            for(int k=1;k<=r-i;k++){
-                System.out.print(" ");
-            }
-            for(int j =1;j<=i;j++){
-                System.out.print("*");
-            }
-            System.out.println();
-            
-        }
-
+        // for(int i =1;i<=r;i++){
+        //     for(int k=1;k<=r-i;k++){
+        //         System.out.print(" ");
+        //     }
+        //     for(int j =1;j<=i;j++){
+        //         System.out.print("*");
+        //     }
+        //     System.out.println();
+        // }
+        // for(int i = 1; i<=r;i++){
+        //     for(int k=1;k<=r-i;k++){
+        //         System.out.print(" ");
+        //     }
+        //     for(int j=1;j<=i;j++){
+        //         System.out.print(j);
+        //     }
+        //     System.out.println();
+        // }
+        // for(int i= 1;i<=r;i++){
+        //     char ch = 'a';
+        //     for(int k=1;k<=r-i;k++){
+        //         System.out.print(" ");
+        //     }
+        //     for(int j=1;j<=i;j++){
+        //         System.out.print(ch);
+        //         ch++;
+        //     }
+        //     System.out.println();
+        // }
+        // for(int i=1;i<=r;i++){
+        //      for(int k=1;k<=r-i;k++){
+        //         System.out.print(" ");
+        //     }
+        //     for(int j =1;j<=i;j++){
+        //         System.out.print("*");
+        //     }
+        //     for(int j=1;j<=i-1;j++){//m
+        //         System.out.print("*");
+        //     }
+        //     System.out.println();
+        // }
+        // for(int i=1;i<=r;i++){
+        //      for(int k=1;k<=r-i;k++){
+        //         System.out.print(" ");
+        //     }
+        //     for(int j =1;j<=i;j++){
+        //         System.out.print(j);
+        //     }
+        //     for(int j=i-1;j>=1;j--){//m
+        //         System.out.print(j);
+        //     }
+        //     System.out.println();
+        // }
+        // for(int i=r;i>=1;i--){
+        //      for(int k=1;k<=r-i;k++){
+        //         System.out.print(" ");
+        //     }
+        //     for(int j =1;j<=i;j++){
+        //         System.out.print(j);
+        //     }
+        //     for(int j=i-1;j>=1;j--){//m
+        //         System.out.print(j);
+        //     }
+        //     System.out.println();
+        // }
+        // for(int i=r;i>=1;i--){
+        //      for(int k=1;k<=r-i;k++){
+        //         System.out.print(" ");
+        //     }
+        //     for(int j =1;j<=i;j++){
+        //         System.out.print("*");
+        //     }
+        //     for(int j=i-1;j>=1;j--){//m
+        //         System.out.print("*");
+        //     }
+        //     System.out.println();
+        // }
+        
         sc.close();
     }
 
