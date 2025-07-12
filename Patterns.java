@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.lang.Math;
+
 public class Patterns {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -299,22 +300,57 @@ public class Patterns {
         // }else{
         // System.out.println("Not a Palindrome");
         // }
-        int n_pos = Math.abs(n);
+        // int n_pos = Math.abs(n);
 
-        int even_sum = 0;
-        int odd_sum = 0;
-        int rem;
-        while (n_pos > 0) {
-            rem = n_pos % 10;
-            if (rem % 2 == 0) {
-                even_sum += rem;
-            } else {
-                odd_sum += rem;
+        // int even_sum = 0;
+        // int odd_sum = 0;
+        // int rem;
+        // while (n_pos > 0) {
+        // rem = n_pos % 10;
+        // if (rem % 2 == 0) {
+        // even_sum += rem;
+        // } else {
+        // odd_sum += rem;
+        // }
+        // n_pos = n_pos / 10;
+        // }
+        // System.out.println(even_sum);
+        // System.out.println(odd_sum);
+        // perfect number
+        // A perfect number is a positive integer that is equal to the sum of its proper
+        // divisors,
+        // excluding itself. For example, 6 is a perfect number because its divisors are
+        // 1, 2, and 3,
+        // int sum = 0;
+        // for(int i = 1;i<=n-1;i++){
+        // if(n%i == 0){
+        // sum+=i;
+        // }
+        // }
+        // if(sum == n){
+        // System.out.println("Perfect Number");
+        // }else{
+        // System.out.println("Not a perfect number");
+        // }
+        // strong number
+        // A strong number is a number whose sum of the factorials of its digits is
+        // equal to the number itself.
+        int rem, fact = 1, sum = 0;
+        int m=n;
+        while (n != 0) {
+            rem = n % 10;
+            n = n / 10;
+            fact = 1; // Reset factorial for each digit
+            for (int i = 1; i <= rem; i++) {
+                fact *= i;
             }
-            n_pos = n_pos / 10;
+            sum += fact;
         }
-        System.out.println(even_sum);
-        System.out.println(odd_sum);
+        if (sum == m) {
+            System.out.println("Strong Number");
+        } else {
+            System.out.println("Not a Strong Number");
+        }
         sc.close();
     }
 
