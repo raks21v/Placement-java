@@ -32,8 +32,9 @@ public class Array {
                 System.out.println("element in found at index "+i);
                 break;
             }
+            if(i==n-1){
+                System.out.println("element not found");
+            }
         }
-
     }
-    
 }
