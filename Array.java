@@ -176,6 +176,5 @@ public class Array {
                 System.out.print(arr[i] + " ");
             }
         }
-
     }
 }
