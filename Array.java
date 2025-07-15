@@ -165,16 +165,28 @@ public class Array {
         // }
         // System.out.println("Last even index: " + evenIndex);
         // System.out.println("Last odd index: " + oddIndex);
-        int sum = 0;
-        for(int i=0;i<=n-1;i++){
-            sum +=arr[i];
-        }
-        double avg = (double) sum / n;
-        System.out.println("Average is: " + avg);
-        for(int i=0;i<n-1;i++){
-            if(arr[i]>avg){
-                System.out.print(arr[i] + " ");
+        // int sum = 0;
+        // for(int i=0;i<=n-1;i++){
+        //     sum +=arr[i];
+        // }
+        // double avg = (double) sum / n;
+        // System.out.println("Average is: " + avg);
+        // for(int i=0;i<n-1;i++){
+        //     if(arr[i]>avg){
+        //         System.out.print(arr[i] + " ");
+        //     }
+        // }
+        for(int i =0;i<=n-1;i++){
+            if(arr[i]%2==0){
+                System.out.print(arr[i]+" ");
             }
         }
+        for(int i =0;i<=n-1;i++){
+            if(arr[i]%2!=0){
+                System.out.print(arr[i]+" ");
+            }
+        }
+        //
+
     }
 }
