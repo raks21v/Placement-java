@@ -186,9 +186,66 @@ public class Array {
         //         System.out.print(arr[i]+" ");
         //     }
         // }
-        for(int i = n-1;i>=0;i--){
-            System.out.print(arr[i] + " ");
+        // for(int i = n-1;i>=0;i--){
+        //     System.out.print(arr[i] + " ");
+        // }
+        // for(int i = 0;i<=n-1;i++){
+        //     if(arr[i]%3==0){
+        //         System.out.println(arr[i] + " "+"is multiple of 3");
+        //     } 
+        // }
+        // prime number in an array
+        /*for(int i=0;i<=n-1;i++){
+            int num = arr[i];
+            int flag = 0;
         }
+            */
+            //rotate cyclically an arry by position
+        // System.out.println("Enter the number of positions to rotate:");
+        // int k =sc.nextInt();
+        // for(int i = 0;i<=n-1;i++){
+        //     for(int j = 0;j<=n-2-i;j++){
+        //         if()
+        //     }
+        // }
+        // System.out.println("Array after rotation:");
+        // for(int i = 0; i <= n - 1; i++) {
+        //     System.out.print(arr[i] + " ");
+        // }
+        //equilibrium index of an array
+        int leftSum = 0;
+        int rightSum = 0;
+        for(int i=0;i<n-1;i++){
+            //arr[i]+=leftSum;
+            leftSum += arr[i];
+        }
+        for(int i=n-1;i>=0;i--){
+            //arr[i]+=rightSum;
+            rightSum += arr[i];
+        }
+        System.out.println(leftSum + " " + rightSum);
+        if(leftSum == rightSum) {
+            System.out.println((n/2));
+        } else {
+            System.out.println("No equilibrium index found.");
+        }
+        //leaders in an array
+        // for(int i=0;i<=n-1;i++){
+        //     for(int j=1;j<=n-1-i;j++){
+        //         if(arr[j]>arr[i]){
+        //             System.out.println(arr[i] + " is a leader in the array");
+        //             break; 
+        //         }
+        //     }
+        // }
+
+        
+        
+      
+
+
+
+
 
     }
 }
