@@ -10,9 +10,11 @@ public class TwoDarray {
                 arr[i][j]=sc.nextInt();
             }
         }
+        int sum = 0;
         for(int i=0;i<=r-1;i++){
             for(int j=0;j<=c-1;j++){
                 System.out.print(arr[i][j] + " ");
+                sum += arr[i][j];
             }
             System.out.println();
         }
