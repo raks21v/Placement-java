@@ -213,22 +213,27 @@ public class Array {
         //     System.out.print(arr[i] + " ");
         // }
         //equilibrium index of an array
-        int leftSum = 0;
+      /* int leftSum = 0;
         int rightSum = 0;
-        for(int i=0;i<n-1;i++){
+        for(int i = 0; i <= n - 1; i++) {
+        for(int j=0;i<n-1;i++){
             //arr[i]+=leftSum;
-            leftSum += arr[i];
+            leftSum += arr[j];
         }
-        for(int i=n-1;i>=0;i--){
+        for(int k=n-1;i>=0;i--){
             //arr[i]+=rightSum;
-            rightSum += arr[i];
+            rightSum += arr[k];
         }
+        if(arr[i]==n-1){
+            System.out.println("ele not found");
+        }
+    }
         System.out.println(leftSum + " " + rightSum);
         if(leftSum == rightSum) {
             System.out.println((n/2));
         } else {
             System.out.println("No equilibrium index found.");
-        }
+        }*/
         //leaders in an array
         // for(int i=0;i<=n-1;i++){
         //     for(int j=1;j<=n-1-i;j++){
@@ -238,6 +243,23 @@ public class Array {
         //         }
         //     }
         // }
+        //Find first repeating element in an array
+        int count=0;
+        for(int i=0;i<=n-1;i++){
+            for(int j=i+1;j<=n-1;j++){
+                if(arr[i]==arr[j]){
+                    System.out.println("First repeating element is: " + arr[i]);
+                    count++;
+                    break;
+                }
+            }
+            if(count > 0) {
+                break; 
+            }else{
+                //return -1;
+                System.out.println("-1");
+            }
+        }
 
         
         

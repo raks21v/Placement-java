@@ -287,7 +287,7 @@ public class Patterns {
         // }
         // int r = sc.nextInt();
         // palindrome of a number
-       
+
         // int val_n = n;
         // int rev=0,rem;
         // while(n>0){
@@ -301,7 +301,7 @@ public class Patterns {
         // System.out.println("Not a Palindrome");
         // }
         // int n_pos = Math.abs(n);
-       
+
         // int even_sum = 0;
         // int odd_sum = 0;
         // int rem;
@@ -338,20 +338,20 @@ public class Patterns {
         // int rem, fact = 1, sum = 0;
         // int m=n;
         // while (n != 0) {
-        //     rem = n % 10;
-        //     n = n / 10;
-        //     fact = 1; // Reset factorial for each digit
-        //     for (int i = 1; i <= rem; i++) {
-        //         fact *= i;
-        //     }
-        //     sum += fact;
+        // rem = n % 10;
+        // n = n / 10;
+        // fact = 1; // Reset factorial for each digit
+        // for (int i = 1; i <= rem; i++) {
+        // fact *= i;
+        // }
+        // sum += fact;
         // }
         // if (sum == m) {
-        //     System.out.println("Strong Number");
+        // System.out.println("Strong Number");
         // } else {
-        //     System.out.println("Not a Strong Number");
+        // System.out.println("Not a Strong Number");
         // }
-        //armstrong number 
+        // armstrong number
         // int sum =0,rem,pov=1;
         // int m=n;
         // int count =0;
@@ -360,59 +360,74 @@ public class Patterns {
          * count =(int) ((Math.log10(n) + 1)
          */
         // while(n>0){
-        //     n=n/10;
-        //     count++;
+        // n=n/10;
+        // count++;
         // }
         // n = m;
         // while(n>0){
-        //     rem = n%10;
-        //     n=n/10;
-        //     pov = 1; // Reset power for each digit
-        //     for(int j = 1;j<=count;j++){
-        //             pov *= rem;
-        //     }
-        //     // for(int i = 0;i<=rem;i++){
-        //     //     pov = (int) Math.pow(rem,count);   
-        //     // }
-        //     sum +=pov;
+        // rem = n%10;
+        // n=n/10;
+        // pov = 1; // Reset power for each digit
+        // for(int j = 1;j<=count;j++){
+        // pov *= rem;
+        // }
+        // // for(int i = 0;i<=rem;i++){
+        // // pov = (int) Math.pow(rem,count);
+        // // }
+        // sum +=pov;
         // }
         // System.out.println(sum);
         // if(sum==m){
-        //     System.out.println("armstrong number");
+        // System.out.println("armstrong number");
         // }else{
-        //     System.out.println("not armstrong");
+        // System.out.println("not armstrong");
         // }
-        //nearest divisible number
+        // nearest divisible number
         int n = sc.nextInt();
         // int m = sc.nextInt();
         // int x= n;
         // int low=0,high = 0,h_c=0,l_c=0;
         // while(n!=0){
-        //     l_c++;
-        //     n=n-1;
-        //     if(n%m==0){
-        //         low=n;
-        //         System.out.println(n);
-        //         break;
-        //     }
+        // l_c++;
+        // n=n-1;
+        // if(n%m==0){
+        // low=n;
+        // System.out.println(n);
+        // break;
+        // }
         // }
         // n=x;
         // while(n!=0){
-        //     h_c++;
-        //     n=n+1;
-        //     if(n%m==0){
-        //         h=n;
-        //         System.out.println(n);
-        //         break;
-        //     }
+        // h_c++;
+        // n=n+1;
+        // if(n%m==0){
+        // h=n;
+        // System.out.println(n);
+        // break;
+        // }
         // }
         // if(l_c<h_c){
-        //     System.out.println(low);
+        // System.out.println(low);
         // }else if(l_c>h_c){
-        //     System.out.println(high);   
+        // System.out.println(high);
         // }else{
-        //     System.out.println("Both are equal");
+        // System.out.println("Both are equal");
         // }
+        //test qn
+        // if (n > 0) {
+        //     for (int i = 0; i <= n - 1; i++) {
+        //         for (int k = 1; k <= i; k++) {
+        //             System.out.print(" ");
+        //         }
+        //         for (int j = n - 1; j >= i; j--) {
+        //             System.out.print("*");
+        //         }
+        //         System.out.println();
+        //     }
+        // }else{
+        //     System.out.println("Pattern not possible");
+        // }
+
         sc.close();
     }
 
