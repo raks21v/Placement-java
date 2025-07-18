@@ -94,6 +94,14 @@ public class Strings {
     //          System.out.print(str3[i].charAt(j));
     //     }
     // }
+    int c=0;
+    String[] str4=str1.split(" ");
+    for(int i=0;i<=str4.length-1;i++){
+        System.out.println(str4[i]);
+        c++;
+    }
+    System.out.println(str4.length);
+    System.out.println(c);
      
     //System.out.print(str1.substring(str2.length(), str1.length()));
         
