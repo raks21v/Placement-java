@@ -430,5 +430,4 @@ public class Patterns {
 
         sc.close();
     }
-
 }

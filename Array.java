@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.util.Arrays;
+
 public class Array {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -86,18 +87,18 @@ public class Array {
         // System.out.println("2nd largest element is " + max1);
 
         // for (int i = 0; i <= n - 1; i++) {
-        //     for (int j = 0; j <= n - i - 2; j++) {
-        //         if (arr[j] > arr[j + 1]) {
-        //             int temp = arr[j];
-        //             arr[j] = arr[j + 1];
-        //             arr[j + 1] = temp;
-        //         }
-        //     }
+        // for (int j = 0; j <= n - i - 2; j++) {
+        // if (arr[j] > arr[j + 1]) {
+        // int temp = arr[j];
+        // arr[j] = arr[j + 1];
+        // arr[j + 1] = temp;
+        // }
+        // }
         // }
         // Arrays.sort(arr);
         // System.out.println("Sorted array is:");
         // for (int i = 0; i <= n - 1; i++) {
-        //     System.out.print(arr[i] + " ");
+        // System.out.print(arr[i] + " ");
         // }
         // System.out.println();
         // System.out.println("largest element is " + arr[n - 1]);
@@ -106,32 +107,32 @@ public class Array {
         // System.out.println("2nd smallest element is " + arr[1]);
         // int fact = sc.nextInt();
         // for(int i =0; i<=n-1;i++){
-        //     if(arr[i]%fact == 0){
-        //         System.out.println(arr[i] + " is divisible by " + fact);
-        //     } else {
-        //         System.out.println(arr[i] + " is not divisible by " + fact);
-        //     }
+        // if(arr[i]%fact == 0){
+        // System.out.println(arr[i] + " is divisible by " + fact);
+        // } else {
+        // System.out.println(arr[i] + " is not divisible by " + fact);
+        // }
         // }
         // int sum = arr[0];
         // for(int i=1;i<=n-1;i++){
-        //     sum+=sum;
-        //     arr[i]=sum;
+        // sum+=sum;
+        // arr[i]=sum;
         // }
         // for(int i=0;i<=n-1;i++){
-        //     System.out.print(arr[i] + " ");
+        // System.out.print(arr[i] + " ");
         // }
         // int ev =0;
         // int esum=0;
         // int oc = 0;
         // int osum = 0;
         // for(int i =0;i<=n-1;i++){
-        //     if(arr[i]%2==0){
-        //         ev++;
-        //         esum += arr[i];
-        //     } else {
-        //         oc++;
-        //         osum += arr[i];
-        //     }
+        // if(arr[i]%2==0){
+        // ev++;
+        // esum += arr[i];
+        // } else {
+        // oc++;
+        // osum += arr[i];
+        // }
         // }
         // System.out.println("Number of even elements: " + ev);
         // System.out.println("Number of odd elements: " + oc);
@@ -140,134 +141,147 @@ public class Array {
         // int y = sc.nextInt();
         // int count = 0;
         // for(int i=0;i<=n-1;i++){
-        //     if(arr[i]%x==0 && arr[i]% y==0){
-        //         count++;
-        //     }
+        // if(arr[i]%x==0 && arr[i]% y==0){
+        // count++;
+        // }
         // }
         // System.out.println(count + " elements are divisible by " + x + " and " + y);
         // for(int i =0;i<=n-1;i++){
-        //     if(arr[i]%2==0){
-        //         System.out.println(i + " is even");
-        //     } else {
-        //         System.out.println(i + " is odd");
-        //     } 
+        // if(arr[i]%2==0){
+        // System.out.println(i + " is even");
+        // } else {
+        // System.out.println(i + " is odd");
+        // }
         // }
         // int evenIndex = 0;
         // int oddIndex = 0;
         // for(int i =0;i<=n-1;i++){
-        //     if(arr[i]%2==0){
-        //         //System.out.println(i + " is even");
-        //         evenIndex = i;
-        //     } else {
-        //         //System.out.println(i + " is odd");
-        //         oddIndex = i;
-        //     } 
+        // if(arr[i]%2==0){
+        // //System.out.println(i + " is even");
+        // evenIndex = i;
+        // } else {
+        // //System.out.println(i + " is odd");
+        // oddIndex = i;
+        // }
         // }
         // System.out.println("Last even index: " + evenIndex);
         // System.out.println("Last odd index: " + oddIndex);
         // int sum = 0;
         // for(int i=0;i<=n-1;i++){
-        //     sum +=arr[i];
+        // sum +=arr[i];
         // }
         // double avg = (double) sum / n;
         // System.out.println("Average is: " + avg);
         // for(int i=0;i<n-1;i++){
-        //     if(arr[i]>avg){
-        //         System.out.print(arr[i] + " ");
-        //     }
+        // if(arr[i]>avg){
+        // System.out.print(arr[i] + " ");
+        // }
         // }
         // for(int i =0;i<=n-1;i++){
-        //     if(arr[i]%2==0){
-        //         System.out.print(arr[i]+" ");
-        //     }
+        // if(arr[i]%2==0){
+        // System.out.print(arr[i]+" ");
+        // }
         // }
         // for(int i =0;i<=n-1;i++){
-        //     if(arr[i]%2!=0){
-        //         System.out.print(arr[i]+" ");
-        //     }
+        // if(arr[i]%2!=0){
+        // System.out.print(arr[i]+" ");
+        // }
         // }
         // for(int i = n-1;i>=0;i--){
-        //     System.out.print(arr[i] + " ");
+        // System.out.print(arr[i] + " ");
         // }
         // for(int i = 0;i<=n-1;i++){
-        //     if(arr[i]%3==0){
-        //         System.out.println(arr[i] + " "+"is multiple of 3");
-        //     } 
+        // if(arr[i]%3==0){
+        // System.out.println(arr[i] + " "+"is multiple of 3");
+        // }
         // }
         // prime number in an array
-        /*for(int i=0;i<=n-1;i++){
-            int num = arr[i];
-            int flag = 0;
-        }
-            */
-            //rotate cyclically an arry by position
+        /*
+         * for(int i=0;i<=n-1;i++){
+         * int num = arr[i];
+         * int flag = 0;
+         * }
+         */
+        // rotate cyclically an arry by position
         // System.out.println("Enter the number of positions to rotate:");
         // int k =sc.nextInt();
         // for(int i = 0;i<=n-1;i++){
-        //     for(int j = 0;j<=n-2-i;j++){
-        //         if()
-        //     }
+        // for(int j = 0;j<=n-2-i;j++){
+        // if()
+        // }
         // }
         // System.out.println("Array after rotation:");
         // for(int i = 0; i <= n - 1; i++) {
-        //     System.out.print(arr[i] + " ");
+        // System.out.print(arr[i] + " ");
         // }
-        //equilibrium index of an array
-      /* int leftSum = 0;
-        int rightSum = 0;
-        for(int i = 0; i <= n - 1; i++) {
-        for(int j=0;i<n-1;i++){
-            //arr[i]+=leftSum;
-            leftSum += arr[j];
-        }
-        for(int k=n-1;i>=0;i--){
-            //arr[i]+=rightSum;
-            rightSum += arr[k];
-        }
-        if(arr[i]==n-1){
-            System.out.println("ele not found");
-        }
-    }
-        System.out.println(leftSum + " " + rightSum);
-        if(leftSum == rightSum) {
-            System.out.println((n/2));
-        } else {
-            System.out.println("No equilibrium index found.");
-        }*/
-        //leaders in an array
+        // equilibrium index of an array
+        /*
+         * int leftSum = 0;
+         * int rightSum = 0;
+         * for(int i = 0; i <= n - 1; i++) {
+         * for(int j=0;i<n-1;i++){
+         * //arr[i]+=leftSum;
+         * leftSum += arr[j];
+         * }
+         * for(int k=n-1;i>=0;i--){
+         * //arr[i]+=rightSum;
+         * rightSum += arr[k];
+         * }
+         * if(arr[i]==n-1){
+         * System.out.println("ele not found");
+         * }
+         * }
+         * System.out.println(leftSum + " " + rightSum);
+         * if(leftSum == rightSum) {
+         * System.out.println((n/2));
+         * } else {
+         * System.out.println("No equilibrium index found.");
+         * }
+         */
+        // leaders in an array
         // for(int i=0;i<=n-1;i++){
-        //     for(int j=1;j<=n-1-i;j++){
-        //         if(arr[j]>arr[i]){
-        //             System.out.println(arr[i] + " is a leader in the array");
-        //             break; 
-        //         }
-        //     }
+        // for(int j=1;j<=n-1-i;j++){
+        // if(arr[j]>arr[i]){
+        // System.out.println(arr[i] + " is a leader in the array");
+        // break;
         // }
-        //Find first repeating element in an array
-        int count=0;
-        for(int i=0;i<=n-1;i++){
-            for(int j=i+1;j<=n-1;j++){
-                if(arr[i]==arr[j]){
-                    System.out.println("First repeating element is: " + arr[i]);
+        // }
+        // }
+        // Find first repeating element in an array
+        // int count=0;
+        // for(int i=0;i<=n-1;i++){
+        // for(int j=i+1;j<=n-1;j++){
+        // if(arr[i]==arr[j]){
+        // System.out.println("First repeating element is: " + arr[i]);
+        // count++;
+        // break;
+        // }
+        // }
+        // if(count > 0) {
+        // break;
+        // }else{
+        // //return -1;
+        // System.out.println("-1");
+        // }
+
+        // super element
+        int count = 0;
+        boolean isSuperElement = false;
+        for (int i = 0; i <= n - 1; i++) {
+            count = 1;
+            for (int j = i + 1; j <= n - 1; j++) {
+                if (arr[i] == arr[j]) {
                     count++;
-                    break;
+                }
+                if (count == arr[i]) {
+                    isSuperElement = true;
+                    // System.out.println(arr[i]);
                 }
             }
-            if(count > 0) {
-                break; 
-            }else{
-                //return -1;
-                System.out.println("-1");
+            if (isSuperElement) {
+                System.out.println(arr[i]+" is a super element");
+                isSuperElement = false;
             }
         }
-
-        
-        
-      
-
-
-
-
-
     }
 }
