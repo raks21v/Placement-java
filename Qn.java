@@ -120,14 +120,14 @@ public class Qn {
          * 
          */
         // duplicate elements in an array
-        String[] s = sc.nextLine().split(",");
-        int n = s.length;
-        int[] arr = new int[n];
-        for (int i = 0; i < n; i++) {
-            arr[i] = Integer.parseInt(s[i], 10);
-        }
-        int count = 0;
-        int[] duplicate = new int[n];
+        // String[] s = sc.nextLine().split(",");
+        // int n = s.length;
+        // int[] arr = new int[n];
+        // for (int i = 0; i < n; i++) {
+        //     arr[i] = Integer.parseInt(s[i], 10);
+        // }
+        // int count = 0;
+        // int[] duplicate = new int[n];
         // for(int i=0;i<n;i++){
         // for(int j=i+1;j<n;j++){
         // if(arr[i] == arr[j]){
@@ -138,44 +138,50 @@ public class Qn {
         // }
         // }
         // }
-        int x = 0;
-        for (int i = 0; i < n - 1; i++) {
-            count = 0;
-            for (int j = i + 1; j < n; j++) {
-                if (arr[i] == arr[j]) {
-                    count++;
-                    // break; // break the inner loop if a duplicate is found
-                }
-                if (count > 0) {
-                    int flag = 0;
-                    for (int m = 0; m < x; m++) {
-                        if (arr[i] == duplicate[m]) {
-                            flag = 1; // already exists
-                            break;
-                        }
-                    }
-                    if (flag == 0) {
-                        duplicate[x] = arr[i];
-                        x++;
-                    }
-                }
-            }
-            // for(int k=0;k<duplicate.length;k++){
-            // System.out.print(duplicate[k] + " ");
-            // }
+    //     int x = 0;
+    //     for (int i = 0; i < n - 1; i++) {
+    //         count = 0;
+    //         for (int j = i + 1; j < n; j++) {
+    //             if (arr[i] == arr[j]) {
+    //                 count++;
+    //                 // break; // break the inner loop if a duplicate is found
+    //             }
+    //             if (count > 0) {
+    //                 int flag = 0;
+    //                 for (int m = 0; m < x; m++) {
+    //                     if (arr[i] == duplicate[m]) {
+    //                         flag = 1; // already exists
+    //                         break;
+    //                     }
+    //                 }
+    //                 if (flag == 0) {
+    //                     duplicate[x] = arr[i];
+    //                     x++;
+    //                 }
+    //             }
+    //         }
+    //         // for(int k=0;k<duplicate.length;k++){
+    //         // System.out.print(duplicate[k] + " ");
+    //         // }
+    //     }
+    //     System.out.print("[");
+    //     for (int i = 0; i < x; i++) {
+    //         System.out.print(duplicate[i]);
+    //         if (i < x - 1) {
+    //             System.out.print(", ");
+    //         }
+    //     }
+    //     System.out.print("]");
+    int n = sc.nextInt();
+    int[] arr = new int[n];
+    int count = 0;
+    for(int i=0;i<n-2;i++){
+        if(arr[i]+arr[i+2]== arr[i+1]){
+            count++;
         }
-        System.out.print("[");
-        for (int i = 0; i < x; i++) {
-            System.out.print(duplicate[i]);
-            if (i < x - 1) {
-                System.out.print(", ");
-            }
-        }
-        System.out.print("]");
     }
+    System.out.println();
+}
 
-    // for(int i = 0;i<count;i++){
-    // System.out.print(duplicate[i] + " ");
-    // }
 
 }
