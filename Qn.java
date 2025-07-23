@@ -35,48 +35,111 @@ public class Qn {
         // }
         // System.out.println("Mid = "+arr2[mid]);
         // sc.close();
-        String[] s = sc.nextLine().split(" ");
-        int n = s.length;
+
+
+        // String[] s = sc.nextLine().split(" ");
+        // int n = s.length;
+        // int[] arr = new int[n];
+        // for(int i=0;i<n;i++){
+        //     arr[i] = Integer.parseInt(s[i],10);
+        // }
+        // String[] s1 = sc.nextLine().split(" ");
+        // int m = s1.length;
+        // int[] arr1 = new int[m];
+        // for(int i=0;i<m;i++){
+        //     arr1[i] = Integer.parseInt(s1[i],10);
+        // }
+        // int  i=0,j=0;
+        // int arr2[] = new int[n+m];
+        // int k=0;
+        // while(i<n && j<m){
+        //     if(arr[i]< arr1[j]){
+        //         arr2[k++] = arr[i++];
+        //     } else if(arr1[j] < arr[i]){
+        //         arr2[k++] = arr1[j++];
+        //     }else{
+        //         arr2[k++] = arr[i++];
+        //         arr2[k++] = arr1[j++];
+        //     }
+               
+        // }
+        // while(i<n){
+        //     arr2[k++] = arr[i++];
+        // }
+        // while(j<m){
+        //     arr2[k++] = arr1[j++];
+        // }
+        // int size = n + m;
+        // double mid = 0;
+        // if(size % 2 == 0){
+        //     mid = (arr2[size/2] + arr2[(size/2)-1]) / 2.0;
+        // } else {
+        //     mid = arr2[size/2];
+        // }
+        // System.out.println("Merged Array: " + Arrays.toString(arr2));
+        // System.out.println("Middle Element: " + mid);
+
+        //kth largest element
+
+        // String[] s = sc.nextLine().split(",");
+        // int n = s.length;
+        // int[] arr = new int[n];
+        // for(int i=0;i<n;i++){
+        //     arr[i] = Integer.parseInt(s[i],10);
+        // }
+        //int k = sc.nextInt();
+        // for(int i=0;i<n;i++){//i=0;i<n-1;i++
+        //     for(int j=i+1;j<n;j++){//j=0;j<n-i-1;j++
+        //         if(arr[i] < arr[j]){
+        //             int temp = arr[i];
+        //             arr[i] = arr[j];
+        //             arr[j] = temp;
+        //         }
+        //     }
+        // }
+        // for(int i=0;i<n;i++){
+        //     System.out.print(arr[i] + " ");
+        // }
+        // if(k <= n && k > 0){
+        //     System.out.println("The " + k + "th largest element is: " + arr[k-1]);
+        // } else {
+        //     System.out.println("Invalid value of k");
+        // }
+/* 
+        for(int i =0;i<n-1;i++){
+            for(int j=0;j<n-i-1;j++){
+                if(arr[j] > arr[j+1]){
+                    int temp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = temp;
+                }
+            }
+        }
+        System.out.println(arr[n-k] + " is the " + k + "th largest element in the array.");
+
+*/  
+        //duplicate elements in an array
+        String[] s =sc.nextLine().split(",");
+        int n=s.length;
         int[] arr = new int[n];
         for(int i=0;i<n;i++){
-            arr[i] = Integer.parseInt(s[i],10);
+            arr[i]=Integer.parseInt(s[i],10);
         }
-        String[] s1 = sc.nextLine().split(" ");
-        int m = s1.length;
-        int[] arr1 = new int[m];
-        for(int i=0;i<m;i++){
-            arr1[i] = Integer.parseInt(s1[i],10);
-        }
-        int  i=0,j=0;
-        int arr2[] = new int[n+m];
-        int k=0;
-        while(i<n && j<m){
-            if(arr[i]< arr1[j]){
-                arr2[k++] = arr[i++];
-            } else if(arr1[j] < arr[i]){
-                arr2[k++] = arr1[j++];
-            }else{
-                arr2[k++] = arr[i++];
-                arr2[k++] = arr1[j++];
+        int count = 0;
+        int[] duplicate = new int[n];
+        for(int i=0;i<n;i++){
+            for(int j=i+1;j<n;j++){
+                if(arr[i] == arr[j]){
+                    count++;
+                    duplicate[count-1] = arr[i]; 
+                    //System.out.println("Duplicate element found:" + arr[i]);
+                    break;
+                }
             }
-               
         }
-        while(i<n){
-            arr2[k++] = arr[i++];
+        for(int i=0;i<count;i++){
+            System.out.print(duplicate[i] + " ");
         }
-        while(j<m){
-            arr2[k++] = arr1[j++];
-        }
-        int size = n + m;
-        double mid = 0;
-        if(size % 2 == 0){
-            mid = (arr2[size/2] + arr2[(size/2)-1]) / 2.0;
-        } else {
-            mid = arr2[size/2];
-        }
-        System.out.println("Merged Array: " + Arrays.toString(arr2));
-        System.out.println("Middle Element: " + mid);
-
 
     }
     
