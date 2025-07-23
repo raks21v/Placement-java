@@ -82,7 +82,11 @@ public class Cat {
          * -> state - brand,model,color,price
          * -> object - samsung,apple,oneplus
          * -> method - call, message, camera, music -- increar vol by 2 points,braightness by 5 points
-         * 
+         * dog
+         * student--marks read from user
+         * state - name,rollno,marks
+         * object - rakshitha,priya,pranav
+         * method - study,play,read,write
          */
         Cat c2=new Cat(20,20,"Golden brown");
         c2.display();
